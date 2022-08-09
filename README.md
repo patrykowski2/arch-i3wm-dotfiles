@@ -1,1 +1,4 @@
-# arch-i3wm-dotfiles
+# Information
+
+# Font installation
+# 
