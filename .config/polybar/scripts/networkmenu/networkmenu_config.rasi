@@ -1,0 +1,87 @@
+configuration {
+    
+}
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    background:         @color0;
+    foreground:         @color7;
+
+    selected:           @color1;
+}
+
+window {
+    location:           center;
+    anchor:             center;
+    
+    fullscreen:         false;
+
+    width:              400px;
+
+    border:             2px;
+    border-radius:      15px;
+
+    x-offset:           0px;
+    y-offset:           0px;
+
+    padding:            0px;
+
+    background-color:   @background;
+    border-color:       @selected;
+
+    children:           [ mainbox ];
+}
+
+mainbox {
+    background-color:   @background;
+    border-color:       @background;
+
+    children:           [ listview ];
+}
+
+listview {
+    background-color:   @background;
+    border-color:       @background;
+
+    columns:            1;
+    lines:              6;
+
+    spacing:            0px;
+
+    layout:             vertical;
+
+    scrollbar:          false;
+
+    children:           [ element, scrollbar ];
+}
+
+scrollbar {
+    background-color:   @selected;
+    border-color:       @background;
+    handle-color:       White;
+
+    margin:             0px 0px 0px 0px;
+
+    handle-width:      5px;
+}
+
+element {
+    background-color:   @background;
+    border-color:       @background;
+    
+    padding:            15px;
+
+    children:           [ element-text ];
+}
+ 
+element-text {
+    background-color:   inherit;
+    border-color:       inherit;
+    text-color:         White;
+}
+ 
+element selected {
+    background-color:   @selected;
+    text-color:         White;
+}
