@@ -12,7 +12,7 @@ Eventually just get `nerds-font-hack` AUR package
 
 Make sure the font is installed with:
 ```
-> fc-cache --realy-force
+> fc-cache --really-force
 > fc-list | grep "Nerd"
 ```
 # Polybar
