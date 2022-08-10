@@ -14,3 +14,4 @@ Make sure the font is installed with:
 ```
 > fc-list | grep "Nerd"
 ```
+# Polybar
